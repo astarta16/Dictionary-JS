@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" class="Sans-serif">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DICTIONARY</title>
+  <link rel="stylesheet" href="./static/style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">
+        <img src="./static/assets/images/logo.svg" alt="logo" />
+      </div>
+      <div class="left">
+        
+        <div class="drop-menu">
+          <div class="drop-menu-btn"> <span>Sans-serif</span>
+            <img src="./static/assets/images/icon-arrow-down.svg" alt="logo" />
+          </div>
+          <ul id="option">
+            <li class="Sans-serif">Sans-serif</li>
+            <li class="Serif">Serif</li>
+            <li class="Mono">Mono</li>
+          </ul>
+        </div>
+
+
+        <div class="vl"></div>
+        <div class="switch">
+          <div class="switch-mode">
+            <input type="checkbox" class="checkbox" id="checkbox" />
+            <label for="checkbox" class="checkbox-label">
+              <span class="ball"></span>
+            </label>
+          </div>
+          <img src="./static/assets/images/icon-moon.svg">
+        </div>
+      </div>
+    </div>
+
+    <form id="search-form">
+      <input id="search" autocomplete="off" type="text" placeholder="Search for any word..">
+      <button type="submit" id="submit">
+        <img src="./static/assets/images/icon-search.svg" alt="">
+      </button>
+    </form>
+    <div class="result">
+    </div>
+  </div>
+  <script src="./static/app.js"></script>
+</body>
+</html>
